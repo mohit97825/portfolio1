@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name Portfolio</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <link rel="icon" type="image" href="pf logo.png">
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #003366;
+    color: #fff;
+}
+
+/* Navbar */
+.header-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2c3e50;
+    padding: 10px 20px;
+}
+
+.title-container {
+    flex: 1;
+}
+
+.nav-container {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-container nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-container nav ul li {
+    margin: 0 15px;
+}
+
+.nav-container nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-container nav ul li a:hover {
+    color: #f39c12;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-container {
+        text-align: left;
+        width: 100%;
+    }
+
+    .nav-container nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-container nav ul li {
+        margin: 10px 0;
+    }
+}
+
+/* Hero Section */
+#home {
+    background: url('your-image.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    flex-direction: column;
+}
+
+#home .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#home h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #f39c12;
+}
+
+#home p {
+    font-size: 2rem;
+    color: black;
+    font-weight: bolder;
+}
+
+#home img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    width: 450px;
+}
+
+/* Media Queries for Responsiveness */
+@media (min-width: 768px) {
+    #home .content {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    #home img {
+        max-width: 400px;
+        margin-left: 20px;
+    }
+
+    #home h1 {
+        font-size: 4rem;
+    }
+
+    #home p {
+        font-size: 2rem;
+    }
+}
+
+/* Button Styles */
+.button-container {
+    margin-top: 20px;
+}
+
+.btn-hire, .btn-download {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    color: white;
+    background-color: #f39c12;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn-hire:hover, .btn-download:hover {
+    background-color: #e67e22;
+}
+
+/* About Section */
+#about {
+    padding: 2rem;
+    background-color: #34495e;
+    text-align: center;
+    color: #ecf0f1;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #f39c12;
+}
+
+#about p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.5;
+}
+
+/* Services Section */
+#services {
+    padding: 2rem;
+    background-color: #2c3e50;
+    text-align: center;
+    color: #ecf0f1;
+}
+
+#services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #f39c12;
+}
+
+.service {
+    display: inline-block;
+    margin: 1rem;
+    width: 350px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #34495e;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.service:hover {
+    background-color: #2c3e50;
+    transform: translateY(-5px);
+}
+
+.service h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #f39c12;
+}
+
+.service p {
+    font-size: 1rem;
+    color: #ecf0f1;
+}
+
+/* Projects Section */
+#projects {
+    padding: 2rem;
+    background-color: #34495e;
+    text-align: center;
+    color: #ecf0f1;
+}
+
+#projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #f39c12;
+}
+
+.project {
+    display: inline-block;
+    margin: 1rem;
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #2c3e50;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.project:hover {
+    background-color: #34495e;
+    transform: translateY(-5px);
+}
+
+.project img {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.project h3 {
+    margin-top: 10px;
+    color: #f39c12;
+}
+
+.project p {
+    font-size: 1rem;
+    color: #ecf0f1;
+}
+
+/* Contact Section */
+#contact {
+    padding: 2rem;
+    background-color: #2c3e50;
+    text-align: center;
+    color: #ecf0f1;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #f39c12;
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #ecf0f1;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+}
+
+form button {
+    display: block;
+    width: auto;
+    padding: 5px;
+    font-size: 0.9rem;
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+form button:hover {
+    background-color: #e67e22;
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* Media Queries for Further Responsiveness */
+@media (max-width: 768px) {
+    #home h1 {
+        font-size: 2.5rem;
+    }
+
+    #home p {
+        font-size: 1.2rem;
+    }
+
+    #home .content {
+        flex-direction: column;
+    }
+
+    #home img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .project {
+        width: 90%;
+    }
+
+    .service {
+        width: 90%;
+    }
+
+    form input, form textarea {
+        font-size: 1rem;
+    }
+
+    #about h2, #services h2, #projects h2, #contact h2 {
+        font-size: 2rem; /* Responsive font size for headings */
+    }
+
+    #about p, #services p, #projects p {
+        font-size: 1rem; /* Responsive font size for paragraphs */
+    }
+}
+
+</style>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="title-container">
+                <h1>Portfolio</h1>
+            </div>
+            <div class="nav-container">
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>        
+    
+    <!-- Hero Section -->
+    <section id="home">
+        <div class="content">
+            <div>
+                <p>Welcome to My Portfolio</p>
+                <h1>I'm Mohit Gupta</h1>
+                <div class="button-container">
+                    <a href="#contact" class="btn-hire">Hire Me</a>
+                    <a href="My Resume.pdf" class="btn-download" download>Download CV</a>
+                </div>
+            </div>
+            <div>
+                <img src="image/mohit gupta.jpg" alt="Your Image">
+            </div>
+        </div>
+    </section>
+    
+    
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>y name is [Your Name], and I am a passionate web developer with a knack for creating user-friendly, visually appealing websites. With a solid foundation in HTML, CSS, and JavaScript, I specialize in transforming ideas into engaging digital experiences. My journey in the tech world has equipped me with diverse skills in graphic design and SEO optimization, enabling me to build websites that not only look great but also rank well in search engines. I thrive on collaboration and continuous learning, always eager to stay updated with the latest trends and technologies in the industry.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project">
+            <img src="image/html.png" alt="Project 1">
+            <h3>Project Title 1</h3>
+            <p>A dynamic e-commerce platform that integrates advanced features for easy product management, providing a smooth shopping experience for users.</p>
+        </div>
+        <div class="project">
+            <img src="image/css.png" alt="Project 2">
+            <h3>Project Title 2</h3>
+            <p>Built using HTML, CSS, and JavaScript, this project showcases real-time updates and responsive design, ensuring a seamless experience across devices.</p>
+        </div>
+        <div class="project">
+            <img src="image/js.png" alt="Project 3">
+            <h3>Project Title 3</h3>
+            <p>A captivating animated showcase that brings ideas to life through vibrant visuals and engaging storytelling, designed to capture the viewer's attention.</p>
+        </div>
+        <div class="project">
+            <img src="image/bootstrap.jpeg" alt="Project 4">
+            <h3>Project Title 4</h3>
+            <p>Utilizing CSS and JavaScript, this project demonstrates smooth transitions and interactive elements, enhancing user engagement and experience.</p>
+        </div>
+        <div class="project">
+            <img src="image/php.png" alt="Project 5">
+            <h3>Project Title 5</h3>
+            <p>Utilizing CSS and JavaScript, this project demonstrates smooth transitions and interactive elements, enhancing user engagement and experience.</p>
+        </div>
+    </section>
+    
+    <!-- Services Section -->
+    <section id="services">
+        <h2>My Services</h2>
+        <div class="service">
+            <h3>Web Development</h3>
+            <p>Web Development encompasses the creation and maintenance of websites, involving various aspects from web design to programming and database management. As a web developer, I specialize in building modern, responsive websites that not only enhance user experience but also ensure seamless functionality across devices. I utilize cutting-edge technologies such as HTML, CSS, JavaScript, and various frameworks to develop dynamic web applications tailored to meet specific client needs. My goal is to deliver visually appealing and highly efficient websites that drive engagement and contribute to your business's success.</p>
+        </div>
+        <div class="service">
+            <h3>SEO Optimization</h3>
+            <p>Search Engine Optimization (SEO) is the practice of enhancing a website's visibility in search engine results pages (SERPs). By employing techniques such as keyword research, on-page optimization, and quality content creation, SEO aims to improve organic traffic and user engagement. Effective SEO strategies help businesses reach their target audience, boost brand awareness, and ultimately drive conversions.
+                Off-page SEO, such as building quality backlinks, further boosts credibility and authority. Regularly updating content and optimizing for mobile devices are essential in today's digital landscape. Analytics tools play a vital role in tracking performance and making data-driven.
+            </p>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Your Name. All rights reserved.</p>
+    </footer>
+</body>
+</html>
