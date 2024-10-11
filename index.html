@@ -14,7 +14,7 @@
             <div class="title-container">
                 <h1>Portfolio</h1>
             </div>
-            <div class="nav-container">
+            <div class="nav-container" id="nav-container">
                 <nav>
                     <ul>
                         <li><a href="#home">Home</a></li>
@@ -26,8 +26,8 @@
                 </nav>
             </div>
         </div>
-    </header>        
-    
+    </header>
+
     <!-- Hero Section -->
     <section id="home">
         <div class="content">
@@ -44,12 +44,17 @@
             </div>
         </div>
     </section>
-    
-    
+
+
     <!-- About Section -->
     <section id="about">
         <h2>About Me</h2>
-        <p>y name is [Your Name], and I am a passionate web developer with a knack for creating user-friendly, visually appealing websites. With a solid foundation in HTML, CSS, and JavaScript, I specialize in transforming ideas into engaging digital experiences. My journey in the tech world has equipped me with diverse skills in graphic design and SEO optimization, enabling me to build websites that not only look great but also rank well in search engines. I thrive on collaboration and continuous learning, always eager to stay updated with the latest trends and technologies in the industry.</p>
+        <p>y name is [Your Name], and I am a passionate web developer with a knack for creating user-friendly, visually
+            appealing websites. With a solid foundation in HTML, CSS, and JavaScript, I specialize in transforming ideas
+            into engaging digital experiences. My journey in the tech world has equipped me with diverse skills in
+            graphic design and SEO optimization, enabling me to build websites that not only look great but also rank
+            well in search engines. I thrive on collaboration and continuous learning, always eager to stay updated with
+            the latest trends and technologies in the industry.</p>
     </section>
 
     <!-- Projects Section -->
@@ -58,62 +63,85 @@
         <div class="project">
             <img src="image/html.png" alt="Project 1">
             <h3>Project Title 1</h3>
-            <p>A dynamic e-commerce platform that integrates advanced features for easy product management, providing a smooth shopping experience for users.</p>
+            <p>A dynamic e-commerce platform that integrates advanced features for easy product management, providing a
+                smooth shopping experience for users.</p>
         </div>
         <div class="project">
             <img src="image/css.png" alt="Project 2">
             <h3>Project Title 2</h3>
-            <p>Built using HTML, CSS, and JavaScript, this project showcases real-time updates and responsive design, ensuring a seamless experience across devices.</p>
+            <p>Built using HTML, CSS, and JavaScript, this project showcases real-time updates and responsive design,
+                ensuring a seamless experience across devices.</p>
         </div>
         <div class="project">
             <img src="image/js.png" alt="Project 3">
             <h3>Project Title 3</h3>
-            <p>A captivating animated showcase that brings ideas to life through vibrant visuals and engaging storytelling, designed to capture the viewer's attention.</p>
+            <p>A captivating animated showcase that brings ideas to life through vibrant visuals and engaging
+                storytelling, designed to capture the viewer's attention.</p>
         </div>
         <div class="project">
             <img src="image/bootstrap.jpeg" alt="Project 4">
             <h3>Project Title 4</h3>
-            <p>Utilizing CSS and JavaScript, this project demonstrates smooth transitions and interactive elements, enhancing user engagement and experience.</p>
+            <p>Utilizing CSS and JavaScript, this project demonstrates smooth transitions and interactive elements,
+                enhancing user engagement and experience.</p>
         </div>
         <div class="project">
             <img src="image/php.png" alt="Project 5">
             <h3>Project Title 5</h3>
-            <p>Utilizing CSS and JavaScript, this project demonstrates smooth transitions and interactive elements, enhancing user engagement and experience.</p>
+            <p>Utilizing CSS and JavaScript, this project demonstrates smooth transitions and interactive elements,
+                enhancing user engagement and experience.</p>
         </div>
     </section>
-    
+
     <!-- Services Section -->
     <section id="services">
         <h2>My Services</h2>
         <div class="service">
             <h3>Web Development</h3>
-            <p>Web Development encompasses the creation and maintenance of websites, involving various aspects from web design to programming and database management. As a web developer, I specialize in building modern, responsive websites that not only enhance user experience but also ensure seamless functionality across devices. I utilize cutting-edge technologies such as HTML, CSS, JavaScript, and various frameworks to develop dynamic web applications tailored to meet specific client needs. My goal is to deliver visually appealing and highly efficient websites that drive engagement and contribute to your business's success.</p>
+            <p>Web Development encompasses the creation and maintenance of websites, involving various aspects from web
+                design to programming and database management. As a web developer, I specialize in building modern,
+                responsive websites that not only enhance user experience but also ensure seamless functionality across
+                devices. I utilize cutting-edge technologies such as HTML, CSS, JavaScript, and various frameworks to
+                develop dynamic web applications tailored to meet specific client needs. My goal is to deliver visually
+                appealing and highly efficient websites that drive engagement and contribute to your business's success.
+            </p>
         </div>
         <div class="service">
             <h3>SEO Optimization</h3>
-            <p>Search Engine Optimization (SEO) is the practice of enhancing a website's visibility in search engine results pages (SERPs). By employing techniques such as keyword research, on-page optimization, and quality content creation, SEO aims to improve organic traffic and user engagement. Effective SEO strategies help businesses reach their target audience, boost brand awareness, and ultimately drive conversions.
-                Off-page SEO, such as building quality backlinks, further boosts credibility and authority. Regularly updating content and optimizing for mobile devices are essential in today's digital landscape. Analytics tools play a vital role in tracking performance and making data-driven.
+            <p>Search Engine Optimization (SEO) is the practice of enhancing a website's visibility in search engine
+                results pages (SERPs). By employing techniques such as keyword research, on-page optimization, and
+                quality content creation, SEO aims to improve organic traffic and user engagement. Effective SEO
+                strategies help businesses reach their target audience, boost brand awareness, and ultimately drive
+                conversions.
+                Off-page SEO, such as building quality backlinks, further boosts credibility and authority. Regularly
+                updating content and optimizing for mobile devices are essential in today's digital landscape. Analytics
+                tools play a vital role in tracking performance and making data-driven.
             </p>
         </div>
     </section>
-    
-    <!-- Contact Section -->
+
     <section id="contact">
-        <h2>Contact Me</h2>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name">
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email">
-            
-            <label for="message">Message:</label>
-            <textarea id="message" name="message"></textarea>
-            
-            <button type="submit">Send</button>
-        </form>
+        <div class="contact-container">
+            <div class="contact-image">
+                <img src="image/mohit gupta.jpg" alt="Contact Image">
+            </div>
+            <div class="contact-form">
+                <h2>Contact Me</h2>
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message"></textarea>
+
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
     </section>
-    
+
     <!-- Footer -->
     <footer>
         <p>© 2024 Your Name. All rights reserved.</p>
